@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+.flex{
+    display:flex;
+}
+.outerdiv{
+    width:30vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border:2px solid black;
+    background-color: beige;
+}
+img{
+   transform:scale(0.80);
+}
+.innerdiv{
+    margin:1rem 0;
+}
+body{
+     display:flex;
+    justify-content: center;
+    padding-top:2rem;
+}
+input{
+    width:100%;
+    border-radius:20px;
+    padding:0.25rem 0.5rem;
+    font-size: 1.25rem;;
+    text-align:center;
+}
+.div5{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    
+}
+.leftDiv{
+    margin:0 1rem;
+}
+.rightDiv{
+    margin:0 1rem;
+}
+button>img{
+    transform: scale(0.3);
+}
+button{
+    height:2rem;
+    width:2rem;
+    display:flex;
+    align-items: center;
+    margin-left:5px;
+    border-radius:50%;
+    justify-content: center;
+    cursor:pointer;
+}
+.div3{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align:center;
+
+}
+.div4{
+    font-size: 1.3rem;
+}
+.clouds{
+    padding:0;
+    margin:0px 0;
+    height:60px;
+}
+.div2{
+    display:flex;
+    align-content:space-around;
+}
+
+
+
+@media(max-width:1000px){
+    .flex{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        
+    } 
+    input{width:70%;
+        margin:10px;
+}
+    .div3{font-size:1rem;}
+    .div2 img{
+        margin:-2rem 0;
+        
+    }
+}
+@media(max-width:600px){
+    .div5{
+        /* display:flex; */
+        flex-direction:column;
+        margin:0px 5px;
+        
+    }
+    .div4{
+       
+        font-size:0.8rem;
+        display:flex;
+        flex-wrap:wrap;
+
+    }
+    .left-div,.rightDiv{
+        margin:10px auto;
+    }
+    .div2 img{
+        margin:-2rem 0;
+        transform:scale(0.3);
+    }
+    .div3{
+        font-size:0.7rem;
+    }
+
+    
+    
+}
